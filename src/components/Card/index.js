@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button';
 import sprite from '../../img/sprite.svg';
 import styles from './styles.module.scss';
 
@@ -43,7 +44,7 @@ const Card = ({ title, name, type, tests, addClass }) => {
             </div>
           </li>
         </ul>
-        <button className={styles['card__btn']}>Open modal</button>
+        <Button addClass={styles['card__btn']}>Open modal</Button>
       </div>
     </div>
   )

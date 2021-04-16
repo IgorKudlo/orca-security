@@ -6,7 +6,7 @@ export const CARDS = [
         type: 'AWS S3 Bucket',
         tests: [
             {
-                code: 'ec2-14175-131-61.co...',
+                code: 'ec2-14175-131-61.com',
                 score_points: '118',
                 total_points: '120'
             },
@@ -24,7 +24,7 @@ export const CARDS = [
         type: 'AWS S3 Bucket',
         tests: [
             {
-                code: 'ec2-14175-131-61.co...',
+                code: 'ec2-14175-131-61.com',
                 score_points: '118',
                 total_points: '120'
             }
@@ -37,7 +37,7 @@ export const CARDS = [
         type: 'AWS S3 Bucket',
         tests: [
             {
-                code: 'ec2-14175-131-61.co...',
+                code: 'ec2-14175-131-61.com',
                 score_points: '118',
                 total_points: '120'
             },
@@ -55,7 +55,7 @@ export const CARDS = [
         type: 'AWS S3 Bucket',
         tests: [
             {
-                code: 'ec2-14175-131-61.co...',
+                code: 'ec2-14175-131-61.com',
                 score_points: '118',
                 total_points: '120'
             }
