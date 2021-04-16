@@ -3,7 +3,7 @@ import logo from '../../img/logo.svg';
 
 const Logo = ({ addClass }) => {
   return (
-    <a href={'https://orca.security/'}>
+    <a href={'https://orca.security/'} className={addClass || ''}>
       <img width={95} height={40} src={logo} title={'Orca security'} alt='Orca security'/>
     </a>
   )
