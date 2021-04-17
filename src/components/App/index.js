@@ -1,17 +1,20 @@
 import React from 'react';
-import Logo from '../Logo';
+import { GlobalStyle } from './GlobalStyle';
+import { AppWrapper, AppContainer, AppLogo } from './AppElements';
 import Cards from '../Cards';
-import styles from './styles.module.scss';
 
 function App() {
   return (
-    <div className={styles['app']}>
-      <div className={styles['app__container']}>
-        <Logo addClass={styles['app__logo-top']} />
-        <Cards />
-      </div>
-    </div>
-  )
+    <>
+      <GlobalStyle />
+      <AppWrapper>
+        <AppContainer>
+          <AppLogo />
+          <Cards />
+        </AppContainer>
+      </AppWrapper>
+    </>
+  );
 }
 
 export default App;
