@@ -3,7 +3,7 @@ import Button from '../Button';
 import sprite from '../../img/sprite.svg';
 import styles from './styles.module.scss';
 
-const Card = ({ title, name, type, tests, addClass }) => {
+const Card = ({ title, name, type, tests, addClass, openModalHandler }) => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -86,7 +86,7 @@ const Card = ({ title, name, type, tests, addClass }) => {
             </div>
           </li>
         </ul>
-        <Button addClass={styles['card__btn']}>Open modal</Button>
+        <Button addClass={styles['card__btn']} clickHandler={openModalHandler}>Open modal</Button>
       </div>
     </div>
   )
