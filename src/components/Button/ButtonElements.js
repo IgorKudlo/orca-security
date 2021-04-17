@@ -1,4 +1,6 @@
-.btn {
+import styled, {css} from 'styled-components';
+
+export const ButtonComponent = styled.button`
   display: inline-block;
   padding: 7px 16px 5px;
   font-size: 10px;
@@ -18,7 +20,7 @@
     box-shadow: 0 0 0 2px rgba(0, 128, 255, 0.2);
   }
 
-  &--white {
+  ${props => props.white && css`
     color: var(--dark);
     background: var(--white);
     border: 1px solid var(--gray);
@@ -26,5 +28,5 @@
     &:hover {
       box-shadow: 0 0 0 2px rgba(112, 112, 123, 0.2);
     }
-  }
-}
+  `}
+`;

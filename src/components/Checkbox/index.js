@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './styles.module.scss';
+import { CheckboxStyled, CheckboxInput, CheckboxText } from './CheckboxElements';
 
 const Checkbox = ({ label }) => (
-  <label className={styles['checkbox']}>
-    <input type='checkbox' className={styles['checkbox__input']}/>
-    <span className={styles['checkbox__text']}>{label}</span>
-  </label>
+  <CheckboxStyled>
+    <CheckboxInput type={'checkbox'}/>
+    <CheckboxText>{label}</CheckboxText>
+  </CheckboxStyled>
 );
 
 export default Checkbox;

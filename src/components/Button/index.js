@@ -1,14 +1,9 @@
 import React from 'react';
-import styles from './styles.module.scss';
+import {ButtonComponent} from './ButtonElements';
 
-const Button = ({children, type, addClass, clickHandler}) => {
+const Button = ({ children, clickHandler, ...props }) => {
   return (
-    <button
-      className={`${styles['btn']} ${type === 'white' ? styles['btn--white'] : ''} ${addClass || ''}`}
-      onClick={clickHandler}
-    >
-      {children}
-    </button>
+    <ButtonComponent onClick={clickHandler} {...props}>{children}</ButtonComponent>
   )
 };
 

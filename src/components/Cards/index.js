@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {CARDS} from './stubs';
-import Card from '../Card';
+import {StyledCards, CardInList} from './CardsElements';
 import Modal from '../Modal';
-import styles from './styles.module.scss';
 
 const Cards = () => {
 
@@ -14,15 +13,15 @@ const Cards = () => {
 
   return (
     <>
-      <div className={styles['cards']}>
+      <StyledCards>
         {
           CARDS.map((card, index) => {
             return (
-              <Card {...card} addClass={styles['cards__item']} key={index + new Date()} openModalHandler={openModalHandler} />
+              <CardInList {...card} key={index+new Date()} openModalHandler={openModalHandler} />
             )
           })
         }
-      </div>
+      </StyledCards>
       {isModalOpen && (
         <Modal openModalHandler={openModalHandler} />
       )}
