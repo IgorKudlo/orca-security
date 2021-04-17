@@ -3,7 +3,7 @@ import Button from '../Button';
 import sprite from '../../img/sprite.svg';
 import styles from './styles.module.scss';
 
-const Card = ({ title, name, type, tests, addClass, openModalHandler }) => {
+const Card = ({ status, title, name, type, tests, addClass, openModalHandler }) => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -14,6 +14,7 @@ const Card = ({ title, name, type, tests, addClass, openModalHandler }) => {
   return (
     <div className={`${styles['card']} ${addClass || ''}`}>
       <div className={styles['card__header']}>
+        <span className={`${styles['card__status']} ${status === 'caution' ? styles['card__status--caution'] : ''}`} />
         <span className={styles['card__title']}>{title}</span>
         <div className={styles['card__menu']}>
           <button className={styles['card__menu-btn']} onClick={openMenuHandler}>
